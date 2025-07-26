@@ -9,12 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@monaco-editor/react": "^4.7.0",
     "@netlify/plugin-nextjs": "^5.11.6",
+    "@reduxjs/toolkit": "^2.8.2",
+    "lucide-react": "^0.526.0",
     "monaco-editor": "^0.52.2",
     "monaco-editor-webpack-plugin": "^7.1.0",
     "next": "15.4.4",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "react-redux": "^9.2.0",
+    "react-resizable-panels": "^3.0.3"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

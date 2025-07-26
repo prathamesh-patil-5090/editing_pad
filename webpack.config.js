@@ -2,9 +2,9 @@ const MonacoWebpackPlugin = require('monaco-editor-webpack-plugin');
 const path = require('path');
 
 module.exports = {
-  entry: 'index.js',
+  entry: './index.js',
   output: {
-    path:path.resolve(_dirname, 'dist'),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'app.js'
   },
   module: {
@@ -15,10 +15,16 @@ module.exports = {
       },
       {
         test: /\.ttf$/,
-        type: 'asset/resources'
+        type: 'asset/resource'
       }
     ]
   },
-},
-plugins: [new MonacoWebpackPlugin()]
+  plugins: [
+    new MonacoWebpackPlugin({
+      languages: [
+        'javascript', 'typescript', 'css', 'html', 'json', 'markdown',
+        'python', 'java', 'cpp', 'rust', 'go', 'xml', 'yaml', 'sql'
+      ]
+    })
+  ]
 };
