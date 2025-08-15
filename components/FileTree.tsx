@@ -104,21 +104,21 @@ export default function FileTree({ className = '' }: FileTreeProps) {
           onMouseLeave={() => setContextMenu(null)}
         >
           <button
-            className="block w-full text-left px-3 py-2 text-sm hover:bg-gray-600 flex items-center"
+            className="block w-full text-left px-3 py-2 text-sm hover:bg-gray-600 items-center"
             onClick={() => handleCreateFile(contextMenu.nodeId)}
           >
             <Plus size={14} className="mr-2" />
             New File
           </button>
           <button
-            className="block w-full text-left px-3 py-2 text-sm hover:bg-gray-600 flex items-center"
+            className="block w-full text-left px-3 py-2 text-sm hover:bg-gray-600 items-center"
             onClick={() => handleCreateFolder(contextMenu.nodeId)}
           >
             <Plus size={14} className="mr-2" />
             New Folder
           </button>
           <button
-            className="block w-full text-left px-3 py-2 text-sm hover:bg-gray-600 flex items-center text-red-400"
+            className="block w-full text-left px-3 py-2 text-sm hover:bg-gray-600 items-center text-red-400"
             onClick={() => handleDelete(contextMenu.nodeId)}
           >
             <Trash2 size={14} className="mr-2" />
